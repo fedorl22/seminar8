@@ -5,10 +5,9 @@
 
 
 
-int[,,] CreateMatrix (int a, int b, int c, int min, int max) 
+int[,,] CreateMatrix (int a, int b, int c) 
 {
     int[,,] matrix = new int[a, b, c];
-    Random rnd = new Random();   
     for (int i = 0; i < matrix.GetLength(0); i++) 
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
@@ -38,5 +37,5 @@ void PrintMatrix(int[,,] matrix)
     }        
 }
  
-int[,,] arr3D = CreateMatrix(2, 2, 2, 10, 20);
+int[,,] arr3D = CreateMatrix(2, 2, 2);
 PrintMatrix(arr3D);
